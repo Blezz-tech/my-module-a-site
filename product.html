@@ -100,41 +100,113 @@
       </li>
     </ul>
     <div class="my-3">
-      <div class="card">
-        <div class="card-header">
-          <h3>Заголовок отзыва</h3>
-          <small>Имя пользователя, Дата отзыва</small>
-        </div>
-        <div class="card-body">
-          <p class="card-text">Текст отзыва</p>
-          <div class="rating">Рейтинг отзыва</div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4">
+          <div class="col mt-3">
+            <div class="card">
+              <div class="card-header">
+                <h3>Заголовок отзыва 1</h3>
+                <small>Имя пользователя 1, Дата отзыва 1</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Текст отзыва 1</p>
+                <div class="rating">Рейтинг отзыва 1</div>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card">
+              <div class="card-header">
+                <h3>Заголовок отзыва 2</h3>
+                <small>Имя пользователя 2, Дата отзыва 2</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Текст отзыва 2</p>
+                <div class="rating">Рейтинг отзыва 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card">
+              <div class="card-header">
+                <h3>Заголовок отзыва 3</h3>
+                <small>Имя пользователя 3, Дата отзыва 3</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Текст отзыва 3</p>
+                <div class="rating">Рейтинг отзыва 3</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header">
-          <h3>Оставить отзыв</h3>
-        </div>
-        <div class="card-body">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Имя</label>
-              <input type="text" class="form-control" id="name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Текст отзыва</label>
-              <textarea class="form-control" id="message" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Отправить</button>
-          </form>
+      <div class="my-3">
+        <div class="card">
+          <div class="card-header">
+            <h3>Оставить отзыв</h3>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Текст отзыва</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
+
+  <section>
+    <h2>С этим товаром смотрят:</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-3">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Название товара 1</h5>
+              <p class="card-text">Характеристики товара 1</p>
+              <p class="card-text">Цена товара 1</p>
+              <button class="btn btn-primary">Добавить в корзину</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-3">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Название товара 2</h5>
+              <p class="card-text">Характеристики товара 2</p>
+              <p class="card-text">Цена товара 2</p>
+              <button class="btn btn-primary">Добавить в корзину</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-3">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Название товара 3</h5>
+              <p class="card-text">Характеристики товара 3</p>
+              <p class="card-text">Цена товара 3</p>
+              <button class="btn btn-primary">Добавить в корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
