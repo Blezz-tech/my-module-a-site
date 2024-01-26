@@ -3,11 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Страница с товаром</title>
+    <title>Страница товара</title>
     <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body data-bs-theme="dark">
+  <header class="border-bottom border-body">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">
+            <img src="./assets/Bike-icon.svg" width="50" style="filter: invert(100%);" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Велосипеды</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Аксессуары</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Запчасти</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Мастерская</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Доставка и оплата</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  соцсети
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><img src="./assets/vk/VK Text Logo White.svg" height="25" alt=""></a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./assets/ok/RGB/OK orange full.svg" height="25" alt=""></a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./assets/rutube/Logo/SVG/Logo_RUTUBE_white_color.svg" height="25" alt=""></a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="input-group">
+                <input type="search" class="form-control" placeholder="Поиск" aria-label="Search" aria-describedby="basic-addon1">
+                <button class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></button>
+              </div>
+            </form>
+            <p class="text-center ms-lg-4 mt-md-3"><i class="bi bi-person-circle h3"></i></p>
+            <p class="text-center ms-lg-4 mt-md-3"><i class="bi bi-cart2 h3"></i></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <nav aria-label="Хлебные крошки">
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Название товара</li>
+          <li class="breadcrumb-item">Рейтинг: ★☆☆☆☆</li>
+          <li class="breadcrumb-item">Цена: $99.99</li>
+          <li class="breadcrumb-item">Описание: Это описание товара.</li>
+          <li class="breadcrumb-item">Гарантия: 1 год</li>
+          <li class="breadcrumb-item">Добавить в корзину</li>
+          <li class="breadcrumb-item"><img src="./assets/other/other_1.jpg" alt="Изображение товара"></li>
+      </ol>
+  </nav>
+
+  <section class="container py-5">
+      <div class="row">
+          <div class="col-lg-6">
+              <img src="product.jpg" alt="Изображение товара" class="img-fluid rounded">
+          </div>
+          <div class="col-lg-6 p-4">
+              <h2>Название товара</h2>
+              <p>Это описание товара.</p>
+              <h4>$99.99</h4>
+              <div class="mt-3">
+                  <button class="btn btn-primary">Добавить в корзину</button>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <footer class="p-3 bg-dark text-white text-center">
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <nav>
+                      <ul class="list-inline list-unstyled">
+                          <li class="list-inline-item"><a href="#" class="text-white">Велосипеды</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-white">Аксессуары</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-white">Запасные части</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-white">Рабочая мастерская</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-white">Доставка и оплата</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-white">Тестовый прогон</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-white">Членство в клубе</a></li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </footer>
 
     <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
